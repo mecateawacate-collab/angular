@@ -1,0 +1,42 @@
+<div class="container">
+  <section class="featured">
+
+    <div class="header">
+      <h1>Featured Listing</h1>
+      <p class="top-text">
+        Dive into the Exquisite Collection of Featured Listings at HomeVista - 
+        Every Corner Whispers Comfort, Every Detail is Crafted with Perfection.
+      </p>
+    </div>
+    
+    <div class="cards">
+      
+      <div class="card" *ngFor="let item of lista">
+        
+        <div class="image">
+          <img [src]="item.imagen">
+          <span class="price">{{ item.precio }}</span>
+        </div>
+
+        <h3>
+          <img src="/iconos/gps.png" class="gps-icon">
+          {{ item.nombre }}
+        </h3>
+
+        <p class="location">{{ item.lugar }}</p>
+
+      </div>
+      
+    </div>
+    
+    <div class="footer">
+      <p>
+        Unveiling the Epitome of Elegance and Luxury. Dive into the Exquisite 
+        Collection of Featured Listings at HomeVista
+      </p>
+      
+      <button class="see-more">See More</button>
+    </div>
+    
+  </section>
+</div>

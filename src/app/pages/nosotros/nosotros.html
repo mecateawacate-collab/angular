@@ -1,0 +1,23 @@
+<section class="nosotros-container">
+
+  <div 
+    class="fila" 
+    *ngFor="let item of secciones"
+    [ngClass]="{ 'reverse': item.invertir }"
+  >
+
+    <div class="contenido">
+      <h2>{{ item.titulo }}</h2>
+      <p>{{ item.texto }}</p>
+    </div>
+
+    <div class="imagen">
+      <img 
+        [src]="item.imagen" 
+        [ngClass]="item.clase"
+      >
+    </div>
+
+  </div>
+
+</section>

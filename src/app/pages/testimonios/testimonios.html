@@ -1,0 +1,34 @@
+<section class="testimonios">
+  <div class="container">
+    
+    <h2 class="titulo">
+      Testimonials from Happy <br />
+      HomeVista Clients
+    </h2>
+
+    <p class="subtitulo">
+      Discovering the True Essence of Home through the Words of Satisfied Clients,
+      as HomeVista Touches Lives around the Globe
+    </p>
+
+    <div class="cards">
+
+      <div 
+        class="card" 
+        *ngFor="let item of lista"
+        [ngClass]="{ 'active': item.activo }"
+      >
+        <span class="quote">“</span>
+
+        <p>{{ item.texto }}</p>
+
+        <div class="autor">
+          <strong>{{ item.nombre }}</strong>
+          <span>{{ item.cargo }}</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

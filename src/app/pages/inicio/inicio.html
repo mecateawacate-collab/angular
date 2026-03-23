@@ -1,0 +1,51 @@
+<section class="hero">
+
+  <div class="metrics left">
+    <div *ngFor="let item of metricasIzq">
+      <h2>{{ item.valor }}</h2>
+      <p>{{ item.etiqueta }}</p>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <h1>Home Is Where Your Story Begins.</h1>
+    <p>
+      Unlock Your Dream Home Explore Endless Possibilities with 
+      <span class="highlight">HomeVista</span> - Your Premier Real Estate Destination
+    </p>
+    <button class="cta" routerLink="/terrenos">Find Properties</button>
+  </div>
+
+  <div class="metrics right">
+    <div *ngFor="let item of metricasDer">
+      <h2>{{ item.valor }}</h2>
+      <p>{{ item.etiqueta }}</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="gallery">
+  <img 
+    *ngFor="let img of imagenes"
+    [src]="img.ruta"
+    class="img"
+    [ngClass]="img.clase"
+  >
+</section>
+
+<section class="bottom">
+  <div class="bottom-left">
+    <h2>Dwelling Achievements</h2>
+  </div>
+
+  <div class="bottom-right">
+    <p>
+      Discover your perfect home and begin your story with
+      <span class="highlight">HomeVista</span> — where every dream finds its place,
+      every journey begins, and every achievement shines bright.
+      The promise of home becomes reality, each moment becomes a memory,
+      and every achievement tells a story.
+    </p>
+  </div>
+</section>

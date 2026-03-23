@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.auth-buttons .login {
+  background: none;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.signup {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.signup:hover {
+  background: #0056b3;
+}
+
+.nosotros-container {
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: #fafafa;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.fila.reverse {
+  flex-direction: row-reverse;
+}
+
+.contenido {
+  flex: 1;
+}
+
+.contenido h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contenido p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagen img:hover {
+  transform: scale(1.03);
+}

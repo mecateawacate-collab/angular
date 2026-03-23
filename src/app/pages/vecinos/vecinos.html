@@ -1,0 +1,37 @@
+<section class="vecinos-container">
+
+  <div class="header">
+    <h2>Property Neighborhoods</h2>
+    <p>
+      Navigating the Tapestry of Neighborhoods Delve into the Fabric
+      Treasures, and Find Your Perfect of the World with HomeVista
+    </p>
+  </div>
+
+  <div class="grid">
+
+    <div 
+      class="card"
+      *ngFor="let item of lista"
+      [ngClass]="{ 'large': item.grande }"
+    >
+      <img [src]="item.imagen" />
+
+      <div class="overlay">
+        <h3>{{ item.nombre }}</h3>
+
+        <div class="info">
+          <span>{{ item.tam }}</span>
+          <span>{{ item.hab }}</span>
+          <span>{{ item.ban }}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="btn-container">
+    <button>See More</button>
+  </div>
+
+</section>
